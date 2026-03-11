@@ -134,13 +134,6 @@ a:hover {
   text-decoration: underline;
 }
 
-
-.recuadro{
-    color: rgb(62, 82, 25);
-    height: 70%;
-    padding: 10px;
-    border-radius: 10px;
-}
 /* img */
 img {
   vertical-align: middle;
@@ -149,15 +142,45 @@ img {
 
 /* tarjetas */
 .tarjetas {
-  display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-.tarjeta h3 {
-  text-align: center;
-  color: white;
-  margin: 50px;
-  border-radius: 10px;
+
+.tarjeta {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
 }
+
 .tarjeta img {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.tarjetaDetalles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 50%; /* Only cover the top 50% of the card */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center text vertically */
+    align-items: center; /* Center text horizontally */
+    color: white; /* Text color */
+    text-align: center; /* Center text alignment */
+    padding: 10px; /* Padding for text */
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.3s; /* Smooth transition */
+}
+
+.tarjeta:hover .tarjetaDetalles {
+    opacity: 1; /* Show overlay on hover */
+}
+
+b {
+    font-weight: bold; /* Make the title bold */
 }
