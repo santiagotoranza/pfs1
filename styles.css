@@ -133,6 +133,13 @@ a:hover {
   text-decoration: underline;
 }
 
+
+.recuadro{
+    color: rgb(62, 82, 25);
+    height: 70%;
+    padding: 10px;
+    border-radius: 10px;
+}
 /* img */
 img {
   vertical-align: middle;
