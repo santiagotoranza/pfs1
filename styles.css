@@ -17,16 +17,25 @@ header {
 }
 
 footer {
-  background-color: #ffed85;
+  background-color: oklch(78.5% 0.115 274.713);
   padding: 1.25rem;
   position: fixed;
   bottom: 0;
   width: 100%;
 }
 
+.header-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
 .logo {
   width: 150px;
   height: 150px;
+  margin-left: 1rem;
 }
 
 /* NAV */
@@ -41,7 +50,7 @@ nav ul {
 nav a {
   margin: 20px auto;
   padding: 10px 20px;
-  background-color: #db0226d7;
+  background-color: oklch(58.5% 0.233 277.117);
   color: white;
   border-radius: 10px;
   text-align: center;
@@ -49,7 +58,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #db022650;
+  background-color: oklch(50% 0.134 242.749);
 }
 
 /* forms */
@@ -95,6 +104,14 @@ h2 {
   margin-bottom: 10px;
 }
 
+h3 {
+  color: #db0227;
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
 p {
   margin-top: 10px;
   color: #db0227;
@@ -105,13 +122,12 @@ p {
 
 /* links */
 a {
-  color: #db022696;
   font-weight: 600;
   text-decoration: none;
 }
 
 a:hover {
-  color: #db0227;
+  color: oklch(93% 0.034 272.788);
   text-decoration: underline;
 }
 
@@ -119,4 +135,14 @@ a:hover {
 img {
   vertical-align: middle;
   margin-right: 8px;
+}
+
+/* tarjetas */
+.Tarjetas {
+  display: flex;
+}
+.TarjetaFutbol {
+  background-color: #884a54;
+  margin: 50px;
+  border-radius: 10px;
 }
