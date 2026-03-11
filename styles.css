@@ -2,18 +2,20 @@
   margin: 0;
   padding: 0;
 }
+
 /* cuerpos */
 body {
   font-family: Montserrat, sans-serif;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   line-height: 1.6;
 }
 
 header {
   background-color: oklch(78.5% 0.115 274.713);
   width: 100%;
-  align-items: center;
+  height: 150px;
 }
+
 
 footer {
   background-color: #ffed85;
@@ -23,16 +25,21 @@ footer {
   width: 100%;
 }
 
+.logo {
+  width: 150px;
+  height: 150px;
+}
+
 /* NAV */
 nav ul {
   display: flex;
   list-style: none;
-  justify-content: center;
-  gap: 2rem;
+  justify-content: right;
+  gap: 1rem;
+  margin-right: 1rem;
 }
 
 nav a {
-  display: block;
   margin: 20px auto;
   padding: 10px 20px;
   background-color: #db0226d7;
@@ -114,5 +121,3 @@ img {
   vertical-align: middle;
   margin-right: 8px;
 }
-
-
