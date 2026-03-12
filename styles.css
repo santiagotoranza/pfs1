@@ -16,6 +16,12 @@ header {
   height: 150px;
 }
 
+h1 {
+  color: white;
+  font-family: Italic;
+  font-size: 70px;  
+}
+
 footer {
   background-color: oklch(78.5% 0.115 274.713);
   padding: 1.25rem;
@@ -51,7 +57,7 @@ nav ul {
 nav a {
   margin: 20px auto;
   padding: 10px 20px;
-  background-color: oklch(58.5% 0.233 277.117);
+  background-color: oklch(41.425% 0.09806 242.95);
   color: white;
   border-radius: 10px;
   text-align: center;
@@ -90,12 +96,6 @@ input {
   box-sizing: border-box;
 }
 
-/* textos */
-h1 {
-  color: #f4d979;
-  text-align: center;
-  margin-top: 20px;
-}
 
 /*
 h2 {
@@ -165,7 +165,7 @@ img {
     left: 0;
     right: 0;
     bottom: 50%; /* Only cover the top 50% of the card */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center text vertically */
@@ -173,6 +173,8 @@ img {
     color: white; /* Text color */
     text-align: center; /* Center text alignment */
     padding: 10px; /* Padding for text */
+    font-size: 26px;
+    font-family: italic;
     opacity: 0; /* Start hidden */
     transition: opacity 0.3s; /* Smooth transition */
 }
@@ -183,4 +185,22 @@ img {
 
 b {
     font-weight: bold; /* Make the title bold */
+}
+
+h2  {
+    text-align: center;
+    color: oklch(41.425% 0.09806 242.95);
+    font-size: 60px;
+    font-family: italic;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 20px 30px;
+  font-size: 26px;
+  font-family: italic;
+  background-color: cornflowerblue;
+  color:white;
+  border-radius: 5%;
 }
