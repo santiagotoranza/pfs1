@@ -19,7 +19,7 @@ header {
 h1 {
   color: white;
   font-family: Italic;
-  font-size: 70px;  
+  font-size: 70px;
 }
 
 footer {
@@ -96,7 +96,6 @@ input {
   box-sizing: border-box;
 }
 
-
 /*
 h2 {
   color: #db0227;
@@ -142,56 +141,60 @@ img {
 
 /* tarjetas */
 .tarjetas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .tarjeta {
-    position: relative;
-    overflow: hidden;
-    margin: 10px;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
 }
 
 .tarjeta img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: 30rem;
+  display: block;
 }
 
 .tarjetaDetalles {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 50%; /* Only cover the top 50% of the card */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center text vertically */
-    align-items: center; /* Center text horizontally */
-    color: white; /* Text color */
-    text-align: center; /* Center text alignment */
-    padding: 10px; /* Padding for text */
-    font-size: 26px;
-    font-family: italic;
-    opacity: 0; /* Start hidden */
-    transition: opacity 0.3s; /* Smooth transition */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 50%; /* Only cover the top 50% of the card */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center text vertically */
+  align-items: center; /* Center text horizontally */
+  color: white; /* Text color */
+  text-align: center; /* Center text alignment */
+  padding: 10px; /* Padding for text */
+  font-size: 26px;
+  font-family: italic;
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.3s; /* Smooth transition */
 }
 
 .tarjeta:hover .tarjetaDetalles {
-    opacity: 1; /* Show overlay on hover */
+  opacity: 1; /* Show overlay on hover */
 }
 
 b {
-    font-weight: bold; /* Make the title bold */
+  font-weight: bold; /* Make the title bold */
 }
 
-h2  {
-    text-align: center;
-    color: oklch(41.425% 0.09806 242.95);
-    font-size: 60px;
-    font-family: italic;
+h2 {
+  text-align: center;
+  color: oklch(41.425% 0.09806 242.95);
+  font-size: 60px;
+  font-family: italic;
 }
 
 button {
@@ -201,6 +204,6 @@ button {
   font-size: 26px;
   font-family: italic;
   background-color: cornflowerblue;
-  color:white;
+  color: white;
   border-radius: 5%;
 }
