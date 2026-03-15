@@ -13,7 +13,7 @@ body {
 header {
   background-color: oklch(78.5% 0.115 274.713);
   width: 100%;
-  height: 150px;
+  height: auto;
 }
 
 h1 {
@@ -25,8 +25,7 @@ h1 {
 footer {
   background-color: oklch(78.5% 0.115 274.713);
   padding: 1.25rem;
-  position: fixed;
-  bottom: 0;
+  position: static;
   width: 100%;
 }
 
@@ -34,9 +33,9 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-bottom: 100px;
+  margin: 0 1.5rem;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -66,6 +65,29 @@ nav a {
 
 nav a:hover {
   background-color: oklch(50% 0.134 242.749);
+}
+
+.nav-toggle {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.nav-toggle-btn {
+  display: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  background-color: oklch(41.425% 0.09806 242.95);
+  border-radius: 10px;
+  border: none;
+}
+
+.nav-toggle-btn span {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
 }
 
 /* forms */
@@ -150,6 +172,8 @@ img {
   position: relative;
   overflow: hidden;
   margin: 10px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
 }
 
 .tarjeta img {
@@ -163,7 +187,7 @@ img {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 50%; /* Only cover the top 50% of the card */
+  bottom: 50%;
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.9) 0%,
@@ -171,23 +195,23 @@ img {
   );
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center text vertically */
-  align-items: center; /* Center text horizontally */
-  color: white; /* Text color */
-  text-align: center; /* Center text alignment */
-  padding: 10px; /* Padding for text */
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 10px;
   font-size: 26px;
   font-family: italic;
-  opacity: 0; /* Start hidden */
-  transition: opacity 0.3s; /* Smooth transition */
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 .tarjeta:hover .tarjetaDetalles {
-  opacity: 1; /* Show overlay on hover */
+  opacity: 1;
 }
 
 b {
-  font-weight: bold; /* Make the title bold */
+  font-weight: bold;
 }
 
 h2 {
@@ -206,4 +230,55 @@ button {
   background-color: cornflowerblue;
   color: white;
   border-radius: 5%;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .header-contenido {
+    margin: 0 1rem;
+  }
+
+  .nav-toggle-btn {
+    display: block;
+    margin-left: auto;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    margin: 0.75rem 0 0;
+    padding-bottom: 0.75rem;
+  }
+
+  nav a {
+    margin: 0;
+    width: 100%;
+  }
+
+  .nav-toggle:checked ~ nav ul {
+    display: flex;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  button {
+    font-size: 20px;
+    padding: 14px 22px;
+  }
+
+  .tarjeta img {
+    height: 18rem;
+  }
 }
