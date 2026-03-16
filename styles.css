@@ -70,7 +70,6 @@ nav a:hover {
 .nav-toggle {
   position: absolute;
   opacity: 0;
-  pointer-events: none;
 }
 
 .nav-toggle-btn {
@@ -151,8 +150,13 @@ a {
 }
 
 a:hover {
-  color: oklch(93% 0.034 272.788);
-  text-decoration: underline;
+  color: rgb(224, 231, 255);
+  text-decoration: none;
+}
+
+button {
+  background-color: rgb(224, 231, 255);
+  color: #db0227;
 }
 
 /* img */
