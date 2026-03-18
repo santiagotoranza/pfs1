@@ -68,8 +68,8 @@ nav a:hover {
   background-color:  oklch(50% 0.134 242.749);
 }
 
-.nav-toggle {
-  position: absolute;
+.nav-toggle { 
+  position: absolute; 
   opacity: 0;
 }
 
