@@ -11,11 +11,10 @@ body {
 }
 
 header {
-  background-color: oklch(78.5% 0.115 274.713);
+  background-color: rgb(163, 179, 255);
   width: 100%;
   height: auto;
 }
-
 
 h1 {
   color: white;
@@ -24,7 +23,7 @@ h1 {
 }
 
 footer {
-  background-color: oklch(78.5% 0.115 274.713);
+  background-color: rgb(163, 179, 255);
   padding: 1.25rem;
   position: static;
   width: 100%;
@@ -57,7 +56,7 @@ nav ul {
 nav a {
   margin: 20px auto;
   padding: 10px 20px;
-  background-color: oklch(41.425% 0.09806 242.95);
+  background-color: rgb(4, 80, 124);
   color: white;
   border-radius: 10px;
   text-align: center;
@@ -65,7 +64,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color:  oklch(50% 0.134 242.749);
+  background-color: rgb(0, 105, 168);
 }
 
 .nav-toggle {
@@ -75,14 +74,13 @@ nav a:hover {
 
 .nav-toggle-btn {
   display: none;
-  cursor: pointer;
   padding: 0.5rem;
-  background-color: oklch(41.425% 0.09806 242.95);
+  background-color: rgb(4, 80, 124);
   border-radius: 10px;
   border: none;
 }
 
-.nav-toggle-btn span {  
+.nav-toggle-btn span {
   display: block;
   width: 24px;
   height: 3px;
@@ -107,7 +105,7 @@ fieldset {
   color: #db0227;
 }
 
-input { 
+input {
   color: #ff0000;
   font-weight: 800;
   border: 2px solid #db0227;
@@ -153,10 +151,9 @@ a {
 a:hover {
   color: rgb(224, 231, 255);
   text-decoration: none;
-  box-shadow: 0 5px 15px  oklch(45.569% 0.165 266.724);
+  box-shadow: 0 5px 15px rgb(45, 76, 177);
   font-size: 20px;
 }
-
 
 /* img */
 img {
@@ -176,7 +173,7 @@ img {
   overflow: hidden;
   margin: 10px;
   border-radius: 16px;
-  box-shadow: 0 10px 30px  oklch(30.505% 0.07163 243.474);
+  box-shadow: 0 10px 30px rgb(3, 50, 80);
 }
 
 .tarjeta img {
@@ -237,16 +234,14 @@ button {
 
 button:hover {
   background-color: rgb(131, 216, 198);
-  box-shadow: 0 5px 15px  oklch(50% 0.134 242.749);
+  box-shadow: 0 5px 15px rgb(0, 105, 168);
   font-size: 32px;
 }
-
-
 
 @media (max-width: 900px) {
   h1 {
     font-size: 40px;
-    text-align: center;           
+    text-align: center;
   }
 
   .header-contenido {
@@ -294,8 +289,8 @@ button:hover {
   }
 
   .logo {
-  width: 100px;
-  height: 100px;
-  margin-left: 10px;
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
   }
 }
