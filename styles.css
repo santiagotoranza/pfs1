@@ -16,10 +16,11 @@ header {
   height: auto;
 }
 
+
 h1 {
   color: white;
   font-family: Italic;
-  font-size: 70px;
+  font-size: 90px;
 }
 
 footer {
@@ -64,7 +65,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: oklch(50% 0.134 242.749);
+  background-color:  oklch(50% 0.134 242.749);
 }
 
 .nav-toggle {
@@ -81,7 +82,7 @@ nav a:hover {
   border: none;
 }
 
-.nav-toggle-btn span {
+.nav-toggle-btn span {  
   display: block;
   width: 24px;
   height: 3px;
@@ -106,7 +107,7 @@ fieldset {
   color: #db0227;
 }
 
-input {
+input { 
   color: #ff0000;
   font-weight: 800;
   border: 2px solid #db0227;
@@ -152,12 +153,10 @@ a {
 a:hover {
   color: rgb(224, 231, 255);
   text-decoration: none;
+  box-shadow: 0 5px 15px  oklch(45.569% 0.165 266.724);
+  font-size: 20px;
 }
 
-button {
-  background-color: rgb(224, 231, 255);
-  color: #db0227;
-}
 
 /* img */
 img {
@@ -177,7 +176,7 @@ img {
   overflow: hidden;
   margin: 10px;
   border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 10px 30px  oklch(30.505% 0.07163 243.474);
 }
 
 .tarjeta img {
@@ -221,7 +220,7 @@ b {
 h2 {
   text-align: center;
   color: oklch(41.425% 0.09806 242.95);
-  font-size: 60px;
+  font-size: 80px;
   font-family: italic;
 }
 
@@ -236,10 +235,18 @@ button {
   border-radius: 5%;
 }
 
+button:hover {
+  background-color: rgb(131, 216, 198);
+  box-shadow: 0 5px 15px  oklch(50% 0.134 242.749);
+  font-size: 32px;
+}
+
+
+
 @media (max-width: 900px) {
   h1 {
     font-size: 40px;
-    text-align: center;
+    text-align: center;           
   }
 
   .header-contenido {
@@ -284,5 +291,11 @@ button {
 
   .tarjeta img {
     height: 18rem;
+  }
+
+  .logo {
+  width: 100px;
+  height: 100px;
+  margin-left: 10px;
   }
 }
